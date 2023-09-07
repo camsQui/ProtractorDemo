@@ -30,7 +30,7 @@ describe('demo calculator tests', function(){
         browser.get('https://juliemr.github.io/protractor-demo/');
         element(by.model('first')).sendKeys('10');
         element(by.model('second')).sendKeys('2');
-        element(by.css('[ng-click="doAddition()"]')).click();
+        element(by.css('[ng-click="doAddition()555"]')).click();
 
         let result = element(by.cssContainingText('.ng-binding', '20'));
         expect(result.getText()).toEqual('20');
